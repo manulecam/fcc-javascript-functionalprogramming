@@ -1,7 +1,7 @@
-function sentensify(str) {
+function checkPositive(arr) {
   // Cambia solo el código debajo de esta línea
-return str.split(/\W/).join(" ")
+  return arr.some(number => number > 0);
   // Cambia solo el código encima de esta línea
 }
 
-sentensify("May-the-force-be-with-you");
+checkPositive([1, 2, 3, -4, 5]);
